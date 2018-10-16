@@ -56,7 +56,7 @@ def exit_jukebox
 end
 
 
-def run(songs)
+def run
   help
   selection = gets.chomp
 
