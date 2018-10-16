@@ -55,8 +55,20 @@ def exit_jukebox
   puts "Goodbye"
 end
 
-def run 
+
+def run(songs)
   help
-  selection_input = gets.chomp
-  
-  if 
+  selection = gets.chomp
+
+case selection
+  when 'help'
+    help
+  when 'list'
+    list(songs)
+  when 'play'
+    play(songs)
+  when 'exit'
+    exit_jukebox
+  end
+
+end
